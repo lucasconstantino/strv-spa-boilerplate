@@ -1,0 +1,11 @@
+{
+  "presets": ["@strv/react-scripts/babel"],
+
+  "plugins": [
+    "ramda",
+    "styled-components"
+  ],
+
+  "env": { "test": { "plugins": ["rewire"] } }
+}
+
