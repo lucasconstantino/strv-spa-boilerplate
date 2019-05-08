@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
+import CallToAction from '../components/CallToAction'
 
 const Global = createGlobalStyle`
   body,
@@ -14,21 +15,6 @@ const Global = createGlobalStyle`
 const Wrapper = styled.div`
   padding: 95px;
   text-align: center;
-`
-
-const CallToAction = styled.a`
-  display: inline-block;
-  font-size: 16px;
-  background-color: #61dafb;
-  color: black;
-  padding: 10px 25px;
-  white-space: nowrap;
-  transition: background-color 0.2s ease-out;
-  text-decoration: none;
-
-  &:hover {
-    background-color: white;
-  }
 `
 
 const App: React.FC = () => (
