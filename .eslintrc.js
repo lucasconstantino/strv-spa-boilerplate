@@ -25,7 +25,6 @@ module.exports = {
         ignoreTemplateLiterals: true,
       },
     ],
-    'no-unused-vars': 'off',
     'no-extra-parens': [
       'warn',
       'all',
@@ -36,6 +35,7 @@ module.exports = {
       },
     ],
     'react-hooks/exhaustive-deps': false,
+    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '[iI]gnored' }],
     '@typescript-eslint/explicit-function-return-type': 'off',
   },
@@ -53,16 +53,9 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.*'],
-      globals: {
-        deepDescribe: false,
-      },
-    },
-    {
       files: ['**/*.test.*', '**/*.stories.*'],
       rules: {
         '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
   ],
